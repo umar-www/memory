@@ -19,6 +19,7 @@ function boxText() {
   item = randItem();
   item.forEach((elm) => {
     elm.classList.add("show");
+    console.log(elm);
   });
 
   setTimeout(() => {
