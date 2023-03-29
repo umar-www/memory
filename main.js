@@ -65,7 +65,7 @@ function game() {
     });
   });
 }
-
+game();
 // RESET FUNCTION
 function reset() {
   resetBtn.addEventListener("click", () => {
