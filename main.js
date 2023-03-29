@@ -49,6 +49,7 @@ function game() {
 
       if (item.classList.contains("notshow")) {
         item.classList.add("show");
+        item.classList.add( "disabled");
         if (counter == 6) {
           lose.textContent = "YOU WIN🤩";
         }
