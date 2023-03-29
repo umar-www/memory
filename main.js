@@ -64,7 +64,6 @@ function game() {
     });
   });
 }
-setTimeout(game, 2000);
 
 // RESET FUNCTION
 function reset() {
