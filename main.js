@@ -3,6 +3,7 @@ const board = document.getElementById("board");
 const box = document.querySelectorAll(".box");
 const lose = document.getElementById("lose");
 const count = document.getElementById("count");
+const modal = document.getElementById("modal");
 
 let itemsRand = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
   .sort(() => Math.random() - 0.5)
@@ -49,7 +50,7 @@ function game() {
 
       if (item.classList.contains("notshow")) {
         item.classList.add("show");
-        item.classList.add( "disabled");
+        item.classList.add("disabled");
         if (counter == 6) {
           lose.textContent = "YOU WIN🤩";
         }
@@ -66,7 +67,8 @@ function game() {
     });
   });
 }
-setTimeout(game, 2000)
+setTimeout(game, 2000);
+
 // RESET FUNCTION
 function reset() {
   resetBtn.addEventListener("click", () => {
@@ -92,7 +94,7 @@ function reset() {
     //   }
     // });
 
-      window.location.reload();
+    window.location.reload();
   });
 }
 reset();
