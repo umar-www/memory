@@ -66,7 +66,7 @@ function game() {
     });
   });
 }
-game();
+setTimeout(game, 2000)
 // RESET FUNCTION
 function reset() {
   resetBtn.addEventListener("click", () => {
